@@ -21,7 +21,7 @@ const PhoneSignUp = () => {
     console.log(number);
     setError("");
     if (number === "" || number === undefined)
-      return setError("Please enter a valid phone number!");
+      return setError("Please enter valid phone number!");
     try {
       const response = await setUpRecaptha(number);
       setResult(response);
