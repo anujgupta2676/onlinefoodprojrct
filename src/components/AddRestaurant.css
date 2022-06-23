@@ -1,0 +1,21 @@
+.Addbutton {
+    background-color: #88e47d;
+    border: none;
+    color: #020000;
+    padding: 15px 15px;
+    text-align: center;
+    font-weight: 100px;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+    margin-right:10px ;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 200px;
+    width:150px;
+    height:70px;
+    
+    border: 1px solid var(--secondary-dark);
+    
+    
+  }
