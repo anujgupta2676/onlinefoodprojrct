@@ -36,7 +36,7 @@ const Login = () => {
   };
 
   return (
-    <Container style={{ width: "400px" }}>
+    <Container style={{ width: "318px" }}>
     <>
       <div className="p-4 box">
         <h2 className="mb-3"> Login</h2>
@@ -65,9 +65,9 @@ const Login = () => {
           </div>
         </Form>
         <hr />
-        <div>
+        <div >
           <GoogleButton
-            className="g-btn"
+            className="g-btn" 
             type="dark"
             onClick={handleGoogleSignIn}
           />

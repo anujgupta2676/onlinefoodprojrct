@@ -13,6 +13,7 @@ const getFreshModelObject = () => ({
     orderMasterId: 0,
     orderNumber: generateOrderNumber(),
     customerId: 0,
+    restaurantId:0,
     pMethod: 'none',
     gTotal: 0,
     deletedOrderItemIds: '',

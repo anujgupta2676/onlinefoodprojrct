@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
+import chef from '../Slider/images/chef.jpg'
+import '../Slider/Aboutslider.css'
 
 
 
@@ -15,17 +17,30 @@ const About = () => {
       console.log(error.message);
     }
   };
-    return (
-        <div className="p-4 box mt-3 text-center">
-            
-            
-            A restaurant menu app offers a digital interactive menu that users can access from their smartphones, as exemplified by Finedine. This restaurant application is a customizable SaaS solution for restaurant owners who want to digitize their ordering process and improve their customer experience.
+    return (<div className='about' id='about'>
+    <div className='container'>
+        <img src={chef} width={500} height={500} alt='chef' />
+        <div >
+            <h2>About US</h2>
+            <span ></span>
+           <h5> <p>Building the best restaurant website doesn’t have to be a time-consuming or difficult task. In many cases, there are simple things you can build into your website to share the most important information with your frequent and potential guests, especially as a way to direct customer traffic to online ordering. 
 
+A great restaurant website supports all of your restaurant marketing activities: it can attract new customers, maintain loyal ones, and raise the overall profile of the establishment outside of the physical location. It's a crucial aspect of running a successful business. 
 
-
-
+As you work to create a restaurant website, keep customer data in mind. Gathering, and using, customer data in the right way can maximize your ability to attract, retain, and deepen the connection with your guests. </p></h5>
+           <h5><p>We EatFlex,believe in excellence service,premimum quality food.</p></h5>
+            <button className='button'>Explore More</button>
         </div>
+    </div>
+</div>
+       
     );
 };
 
 export default About;
+
+
+
+
+
+
