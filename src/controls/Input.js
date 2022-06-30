@@ -5,7 +5,8 @@ export default function Input(props) {
 
     const { name, label, value, variant, onChange, error = null, ...other } = props;
     return (
-        <TextField
+
+        <TextField className='boxinput'
             variant={variant || "outlined"}
             label={label}
             name={name}

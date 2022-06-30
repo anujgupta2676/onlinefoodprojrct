@@ -159,9 +159,10 @@ export default function OrderForm(props) {
             <Form onSubmit={submitOrder}>
                 <Grid container>
                     <Grid item xs={6}>
-                        <Input
+                        <Input 
+                             
                             disabled
-                            label="Order Number"
+                            label ="Order Number"
                             name="orderNumber"
                             value={values.orderNumber}
                             InputProps={{
@@ -170,22 +171,22 @@ export default function OrderForm(props) {
                                     position="start">#</InputAdornment>
                             }}
                         />
-                        <Select
+                         <Select
                             label="Restaurants"
                             name="customerId"
                             value={values.customerId}
                             onChange={handleInputChange}
                             options={customerList}
                             error={errors.customerId}
-                        /> 
-                        <Select
-                            label="Restaurants"
+                        />  
+                          <Select
+                            label="Confirm Restaurants"
                             name="restaurantId"
                             value={values.restaurantId}
                             onChange={handleInputChange}
                             options={customerList1}
                             error={errors.restaurantId}
-                        />
+                        />  
 
                          
                         

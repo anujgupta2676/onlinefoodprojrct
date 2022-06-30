@@ -42,7 +42,7 @@ export default function OrderList(props) {
                 <TableHead>
                     <TableRow>
                         <TableCell>Order No.</TableCell>
-                        <TableCell>Customer</TableCell>
+                        <TableCell>Restaurant</TableCell>
                         <TableCell>Payed With</TableCell>
                         <TableCell>Grand Total</TableCell>
                         <TableCell></TableCell>

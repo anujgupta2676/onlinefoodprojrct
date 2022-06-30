@@ -39,13 +39,13 @@ function App() {
            <Route path="/" element={<Startie/>} /> 
                <Route path="/Homme"element={ <ProtectedRoute><Homme/></ProtectedRoute>}/>
               <Route path="/Login" element={<Login />} /> 
-              <Route path="/AddRestaurant" element={<AddRestaurant/>} />  
+              <Route path="/AddRestaurant" element={<ProtectedRoute><AddRestaurant/></ProtectedRoute>} />  
               <Route path="/AdminLogin" element={<AdminLogin/>} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/phonesignup" element={<PhoneSignUp />} />
               <Route path = '/LOGOUT' element = {<ProtectedRoute><Home/></ProtectedRoute>}/>
-              <Route path = '/About' element = {<ProtectedRoute><About/></ProtectedRoute>}/>
-              <Route path = '/Contact' element = {<ProtectedRoute><Contact/></ProtectedRoute>}/> 
+              <Route path = '/About' element = {<About/>}/>
+              <Route path = '/Contact' element = {<Contact/>}/> 
           
          
             </Routes>

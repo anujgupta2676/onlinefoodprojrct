@@ -12,6 +12,8 @@ import { createAPIEndpoint1, ENDPIONTS1 } from "../api/index1";
 function Example(props) {
 
     const url="https://localhost:44357/api/AddRestaurants"
+    const url2="http://localhost:44348/api/Customer"
+
     const[data,setData]=useState({
 
 
@@ -19,7 +21,9 @@ function Example(props) {
         restaurantName: "",
         address: "",
         city: "",
-        pincode: ""
+        pincode: "",
+        customerName:""
+        
 
     });
 
@@ -31,6 +35,12 @@ function Example(props) {
             address: data.address, 
             city: data.city,
             pincode: data.pincode
+        })
+        .then(res=>{console.log(res.data)})
+        axios.post(url2,{
+            
+            customerName: data.restaurantName,
+            
         })
         .then(res=>{console.log(res.data)})
     }
